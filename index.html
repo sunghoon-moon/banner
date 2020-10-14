@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0;}
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        a { text-decoration: none;}
+
+        .banner {
+            position: relative;
+            width: 700px;
+            height: 400px;
+        }
+        .banner > video {
+            position: absolute;
+        }
+        .banner > header {
+            position: absolute;
+            color: #fff;
+            width: 680px;
+            top: 10px;
+            font-size: 28px;
+            text-align: right;
+        }
+        .banner > img {
+            position: absolute;
+            left: 530px;
+            top: 286px;
+            text-align: right;
+        }
+
+        header > h1 > span.title1 {
+            opacity: 0;
+            animation-name: title;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.4s;
+        }
+        header > h1 > span.title2 {
+            opacity: 0;
+            animation-name: title;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 0.8s;
+        }
+        header > h1 > span.title3 {
+            opacity: 0;
+            animation-name: title;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 1.2s;
+        }
+        header > h1 > span.title4 {
+            opacity: 0;
+            animation-name: title;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 1.6s;
+        }
+        header > h1 > span.title5 {
+            opacity: 0;
+            animation-name: title;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+        }
+
+        @keyframes title {
+            0% { opacity: 0;}
+            15% { opacity: 0;}
+            30% { opacity: 1;}
+            70% { opacity: 1;}
+            90% { opacity: 0;}
+            100% {opacity: 0;}
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#" class="banner">
+        <video 
+            src="./dj.mp4"
+            autoplay
+            loop
+            muted
+        ></video>
+        <header>
+            <h1>
+                <span class="title1">DON'T</span> <span class="title2">FORGET</span><br>
+                <span class="title3">TO</span> <span class="title4">GO</span> <span class="title5">HOME</span>
+            </h1>
+        </header>
+        <img class="logo" src="./logo.png" alt="logo">
+    </a>
+</body>
+</html>
